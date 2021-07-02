@@ -97,6 +97,13 @@
     patch = ./export-rt-sched-migrate.patch;
   };
 
+  export_kernel_fpu_functions = {
+    "5.3" = {
+      name = "export_kernel_fpu_functions";
+      patch = ./export_kernel_fpu_functions_5_3.patch;
+    };
+  };
+
   # patches from https://lkml.org/lkml/2019/7/15/1748
   mac_nvme_t2 = rec {
     name = "mac_nvme_t2";
